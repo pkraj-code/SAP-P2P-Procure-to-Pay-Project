@@ -79,19 +79,15 @@ Processed through SAP FI module.
 
 ### Purchase Order (ME21N)
 
-![ME21N Screenshot](screenshots/me21n.png)
 
 ### Goods Receipt (MIGO)
 
-![MIGO Screenshot](screenshots/migo.png)
 
 ### Invoice Verification (MIRO)
 
-![MIRO Screenshot](screenshots/miro.png)
 
 ### SAP Dashboard
 
-![SAP Dashboard](screenshots/dashboard.png)
 
 ---
 
