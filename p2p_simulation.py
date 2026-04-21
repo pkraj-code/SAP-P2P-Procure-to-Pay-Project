@@ -30,9 +30,7 @@ from dataclasses import dataclass, field, asdict
 from typing import Optional
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # DATA MODELS
-# ─────────────────────────────────────────────────────────────────────────────
 
 @dataclass
 class PurchaseRequisition:
@@ -218,9 +216,7 @@ class AuditLog:
         print(f"  {'═'*55}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # HELPERS
-# ─────────────────────────────────────────────────────────────────────────────
 
 def _now() -> str:
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -237,9 +233,7 @@ def _section(title: str):
     print(f"{'═' * width}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # P2P WORKFLOW ENGINE
-# ─────────────────────────────────────────────────────────────────────────────
 
 class P2PWorkflow:
     """
@@ -507,9 +501,7 @@ class P2PWorkflow:
         print(f"\n  📄 Audit log exported to: {filepath}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # DEMO RUN
-# ─────────────────────────────────────────────────────────────────────────────
 
 def run_demo():
     """Run a complete demo P2P cycle with sample data."""
@@ -564,9 +556,7 @@ def run_demo():
     workflow.export_audit("p2p_audit_log.json")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # INTERACTIVE MODE
-# ─────────────────────────────────────────────────────────────────────────────
 
 def run_interactive():
     """Guided interactive P2P cycle entry."""
@@ -619,9 +609,7 @@ def run_interactive():
         workflow.export_audit("p2p_audit_log.json")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # ENTRY POINT
-# ─────────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="SAP P2P Simulation Engine")
